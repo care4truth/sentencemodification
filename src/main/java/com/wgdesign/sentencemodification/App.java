@@ -14,9 +14,12 @@ package com.wgdesign.sentencemodification;
 public class App 
 {
     public static void main( String[] args )
-    {
-        //Read from commandline
-        SentenceManipulation sentenceManipulation = new SentenceManipulation(args[0]);
-        System.out.println(sentenceManipulation.processSentence());
+    { 
+        if (args[0] == null)  {
+           SentenceManipulation sentenceManipulation = new SentenceManipulation(args[0]);
+           System.out.println(sentenceManipulation.processSentence());
+        } else {
+           System.out.println("Input sentence is missing.A sentence must be entered");
+        }
     }
 }

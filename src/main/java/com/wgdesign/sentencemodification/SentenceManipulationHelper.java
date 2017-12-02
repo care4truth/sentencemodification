@@ -9,6 +9,16 @@ import java.util.List;
  */
 public class SentenceManipulationHelper {
    public  static String manipulateWord(List<Character> word) {
-      return new String();
+      //when size is 1 , represent as it is.
+      if(word.size() == 1 ) {
+         return new StringBuffer()
+                  .append(word.get(0)).toString();
+      } 
+      //logic that we actually need when size is greater than 1.Input:success;Output:s4s
+      return new StringBuffer()
+               .append(String.valueOf(word.get(0)))
+               .append(word.subList(1 , word.size() - 1).stream().distinct().count())
+               .append(String.valueOf(word.get(word.size() - 1)))
+               .toString();
    }
 }

@@ -13,7 +13,13 @@ public class AppTest
 {
    @Test(expected = IllegalArgumentException.class)
    public void testIfInputNull() {
-     SentenceManipulation sentenceManipulation = new SentenceManipulation(null);
+     SentenceManipulation sentenceManipulation = new SentenceManipulation();
+     sentenceManipulation.processSentence();
+   }
+   
+   @Test(expected = IllegalArgumentException.class)
+   public void testIfInputEmpty() {
+     SentenceManipulation sentenceManipulation = new SentenceManipulation("");
      sentenceManipulation.processSentence();
    }
    

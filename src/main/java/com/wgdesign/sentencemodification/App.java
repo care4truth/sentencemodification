@@ -15,11 +15,11 @@ public class App
 {
     public static void main( String[] args )
     { 
-        if (args[0] == null)  {
-           SentenceManipulation sentenceManipulation = new SentenceManipulation(args[0]);
-           System.out.println(sentenceManipulation.processSentence());
-        } else {
-           System.out.println("Input sentence is missing.A sentence must be entered");
-        }
+     if(args.length > 0) {
+        SentenceManipulation sentenceManipulation = new SentenceManipulation(args[0]);
+        System.out.println(sentenceManipulation.processSentence());
+     } else {
+        System.out.println("Input sentence is missing.A sentence must be entered");
+     }
     }
 }

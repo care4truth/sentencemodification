@@ -14,14 +14,14 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
-   <dependencies>
+  <dependencies>
 	<!-- JUNIT CONSOLE -->
 	<dependency>
 	    <groupId>org.junit</groupId>
 	    <artifactId>junit-console</artifactId>
 	    <version>5.0.0-ALPHA</version>
 	</dependency>
-	<!-- JUNIT RUNNER -->
+	<!-- JUNIT RUNNER-->
 	<dependency>
 	    <groupId>org.junit</groupId>
 	    <artifactId>junit4-runner</artifactId>
@@ -53,7 +53,7 @@
   			</executions>
   			<configuration>
   				<executable>java</executable>
-    			<mainClass>com.test.stringmanipulation.App</mainClass>
+    			<mainClass>com.wgdesign.sentencemodification.App</mainClass>
   			</configuration>
   		</plugin>
   	</plugins>

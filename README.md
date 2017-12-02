@@ -17,4 +17,5 @@ How to run
 Eg: mvn clean compile install exec:java -Dexec.args="'Hello World'"
 
 Note: 1. "inputsentence" in the above command , is the place where you need to give your own sentence.Please be careful with quotes.
+
       2. If argument was not entered , system will prompt you to "Input sentence is missing.A sentence must be entered".

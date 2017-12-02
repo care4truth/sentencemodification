@@ -12,6 +12,7 @@ How to run
 ----------
 1. Please clone this repository
 2. Go that location on your system and run the following command.
+
     mvn clean compile install exec:java -Dexec.args="'inputsentence'"
 Eg: mvn clean compile install exec:java -Dexec.args="'Hello World'"
 
